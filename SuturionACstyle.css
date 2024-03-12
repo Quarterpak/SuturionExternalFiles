@@ -1,3 +1,67 @@
+/* custom styles begins */
+
+#_form_48_ input[type='checkbox'] {
+  opacity: 0;
+  position: absolute;
+
+  margin: unset;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+span.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid #0e646b;
+  cursor: pointer;
+
+  border-radius: 0;
+}
+
+#_form_48_ input[type='checkbox']:checked + span.checkmark {
+  background-color: #0e646b;
+}
+
+/* #_form_48_ input[type='checkbox']:checked + span.checkmark::after {
+  content: '✓';
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+} */
+
+#_form_48_ ._row {
+  display: grid !important;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+#_form_48_ input[type='email'] {
+  width: 100%;
+  border: unset;
+  border-bottom: 1px solid #0e646b;
+  border-radius: unset;
+  /* font-family: Neue_Haas_Grotesk_Text_Pro !important; */
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #0e646b !important;
+  padding-left: 15px;
+  background-color: transparent;
+}
+
+#_form_48_ input[type='email']::placeholder {
+  color: #0e646b !important;
+}
+
+/* custom styles end */
+
 #_form_48_ {
   font-size: 14px;
   line-height: 1.6;
@@ -44,16 +108,23 @@
 #_form_48_ textarea {
   resize: none;
 }
+/* SUBMIT BUTTON */
 #_form_48_ ._submit {
   -webkit-appearance: none;
   cursor: pointer;
-  font-family: arial, sans-serif;
+  /* font-family: arial, sans-serif; */
   font-size: 14px;
   text-align: center;
   background: #ccdfde !important;
   border: 1px solid #0e646b !important;
   color: #0e646b !important;
   padding: 10px !important;
+
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: left !important;
+  padding: 15px 45px !important;
+  text-transform: capitalize;
 }
 #_form_48_ ._submit:disabled {
   cursor: not-allowed;
@@ -426,9 +497,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #ccdfde !important;
+  /* background: #ccdfde !important; */
   border: 0px solid #0e646b !important;
-  max-width: 500px;
+  /* max-width: 500px; */
+  max-width: 100%;
   -moz-border-radius: 0px !important;
   -webkit-border-radius: 0px !important;
   border-radius: 0px !important;
