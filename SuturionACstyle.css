@@ -54,10 +54,16 @@ span.checkmark {
   color: #0e646b !important;
   padding-left: 15px;
   background-color: transparent;
+
+  margin-bottom: 40px;
 }
 
 #_form_48_ input[type='email']::placeholder {
   color: #0e646b !important;
+}
+
+#_form_48_ ._row._checkbox-radio {
+  margin-bottom: 40px;
 }
 
 /* custom styles end */
@@ -115,7 +121,7 @@ span.checkmark {
   /* font-family: arial, sans-serif; */
   font-size: 14px;
   text-align: center;
-  background: #ccdfde !important;
+  background: transparent !important;
   border: 1px solid #0e646b !important;
   color: #0e646b !important;
   padding: 10px !important;
@@ -236,7 +242,7 @@ span.checkmark {
 }
 #_form_48_ ._form_element {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 0;
   max-width: 100%;
 }
@@ -387,7 +393,7 @@ span.checkmark {
   width: 29%;
   display: inline-flex;
 }
-@media (min-width: 320px) and (max-width: 667px) {
+/* @media (min-width: 320px) and (max-width: 667px) {
   ::-webkit-scrollbar {
     display: none;
   }
@@ -485,7 +491,7 @@ span.checkmark {
   #_form_48_ ._inline-style {
     margin: 20px 0 0 !important;
   }
-}
+} */
 #_form_48_ {
   position: relative;
   text-align: left;
@@ -555,12 +561,12 @@ span.checkmark {
   text-align: center;
   font-size: 18px;
 }
-@media (min-width: 320px) and (max-width: 667px) {
+/* @media (min-width: 320px) and (max-width: 667px) {
   #_form_48_._inline-form._inline-style ._inline-style._button-wrapper {
     margin-top: 20px !important;
     margin-left: 0 !important;
   }
-}
+} */
 #_form_48_ .iti.iti--allow-dropdown.iti--separate-dial-code {
   width: 100%;
 }
